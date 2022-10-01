@@ -72,7 +72,7 @@ You should be able to see a similar output to this:
 
 A `GET` request to `localhost:8080/greeting` (via [Postman][3], or your browser for example) should return a `200 OK` response with:
 
-```JSON
+```txt
 Hello World!
 ```
 
