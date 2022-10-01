@@ -38,7 +38,9 @@ OpenJDK Runtime Environment Zulu17.36+13-CA (build 17.0.4+8-LTS)
 OpenJDK 64-Bit Server VM Zulu17.36+13-CA (build 17.0.4+8-LTS, mixed mode, sharing)
 ```
 
-Then, to start the server, run the following command:
+### Start the server
+
+To start the server, run the following command:
 
 ```bash
 cd api
@@ -56,18 +58,35 @@ You should be able to see a similar output to this:
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.4)
 
-2022-10-01 17:36:22.502  INFO 4849 --- [           main] c.c.recipe.RecipeApiApplication          : Starting RecipeApiApplication using Java 17.0.4
-2022-10-01 17:36:22.504  INFO 4849 --- [           main] c.c.recipe.RecipeApiApplication          : No active profile set, falling back to 1 default profile: "default"
-2022-10-01 17:36:22.891  INFO 4849 --- [           main] c.c.recipe.RecipeApiApplication          : Started RecipeApiApplication in 0.806 seconds (JVM running for 1.021)
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.664 s
-[INFO] Finished at: 2022-10-01T17:36:22+01:00
-[INFO] ------------------------------------------------------------------------
+2022-10-01 19:32:15.252  INFO 7013 --- [           main] c.c.recipe.RecipeApiApplication          : Starting RecipeApiApplication using Java 17.0.4 
+2022-10-01 19:32:15.254  INFO 7013 --- [           main] c.c.recipe.RecipeApiApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-10-01 19:32:15.914  INFO 7013 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-01 19:32:15.922  INFO 7013 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-01 19:32:15.922  INFO 7013 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-01 19:32:15.996  INFO 7013 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-01 19:32:15.996  INFO 7013 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 706 ms
+2022-10-01 19:32:16.490  INFO 7013 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-01 19:32:16.498  INFO 7013 --- [           main] c.c.recipe.RecipeApiApplication          : Started RecipeApiApplication in 1.7 seconds (JVM running for 1.944)
+
 ```
+
+A `GET` request to `localhost:8080/greeting` (via [Postman][3], or your browser for example) should return a `200 OK` response with:
+
+```JSON
+Hello World!
+```
+
+### Open API Documentation
+
+Once the server is started, navigating to `http://localhost:8080/swagger-ui/index.html` should display a documentation page for your API.
+
+<br/>
+
+![Opean API documentation][4]
 
 
 
 [1]: https://martinfowler.com/bliki/CQRS.html
 [2]: https://spring.io/projects/spring-boot
+[3]: https://www.postman.com/downloads/
+[4]: ./api/open-api-documentation.png
