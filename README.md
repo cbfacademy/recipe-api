@@ -44,8 +44,7 @@ Then I should get a `200 OK` HTTP response with: <br/>
                 "quantity": "700g (about 6)"
             }
         ],
-        "instructions": "Heat oven to 220C/fan 200C/gas 7. Put a pan of water on to boil, 
-            then cook the lasagne sheets for about 5 mins until softened, but not cooked through..."
+        "instructions": "Heat oven to 220C/fan 200C/gas 7. Put a pan of water on to boil, then cook the lasagne sheets for about 5 mins until softened, but not cooked through..."
     },
     {
         "id": 2,
@@ -60,8 +59,7 @@ Then I should get a `200 OK` HTTP response with: <br/>
                 "quantity": "300g (plus extra for dusting)"
             }
         ],
-        "instructions": "First, make the pastry. 
-            Tip both flours and the sugar into a bowl with a large pinch of salt..."
+        "instructions": "First, make the pastry. Tip both flours and the sugar into a bowl with a large pinch of salt..."
     }
 ]
 
@@ -93,9 +91,7 @@ Then I should get a `201 CREATED` HTTP response. <br/>
             "quanity": "250g"
         }
     ],
-    "instructions": "Heat a griddle or large frying pan over a medium-high heat. 
-        Brush the aubergine slices on both sides with the olive oil and season with a little salt,
-        then griddle in batches until the slices are softened and slightly charred..."
+    "instructions": "Heat a griddle or large frying pan over a medium-high heat. Brush the aubergine slices on both sides with the olive oil and season with a little salt, then griddle in batches until the slices are softened and slightly charred..."
 }
 ```
 
@@ -115,10 +111,7 @@ Then I should get a `204 NO CONTENT` HTTP response. <br/>
 ```JSON
 {
     "name": "Aubergine parmigiana lasagne",
-    "instructions": "Heat a griddle or large frying pan over a medium-high heat. 
-        Brush the aubergine slices on both sides with the olive oil and season with a little salt,
-        then griddle in batches until the slices are softened and slightly charred (ensure the heat isn’t too high or the aubergine will char before it softens). 
-        Transfer the cooked slices to a plate as you go..."
+    "instructions": "Heat a griddle or large frying pan over a medium-high heat. Brush the aubergine slices on both sides with the olive oil and season with a little salt, then griddle in batches until the slices are softened and slightly charred (ensure the heat isn’t too high or the aubergine will char before it softens). Transfer the cooked slices to a plate as you go..."
 }
 ```
 
